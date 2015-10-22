@@ -1,2 +1,9 @@
 {{outlet}}
-ini hierarchies
+ini hierarchies lagi
+<ul>
+    {{#each model as | hierarcy|}}
+    <li>
+        {{hierarcy.name}}
+    </li>
+    {{/each}}
+</ul>

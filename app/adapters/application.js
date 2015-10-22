@@ -13,13 +13,14 @@ export default DS.RESTAdapter.extend({
     //	return {
     //	};
     //}),
-    shouldReloadAll: function () {
-        return false;
-    },
-    shouldBackgroundReloadRecord: function () {
-        return false;
-    },
-    host: 'http://localhost:9876/api'
+    // shouldReloadAll: function () {
+    //     return false;
+    // },
+    // shouldBackgroundReloadRecord: function () {
+    //     return false;
+    // },
+    host: 'http://localhost:9876',
+    namespace: 'api'
     //host: 'http://localhost:8765',// @todo change this on production server
     //host: 'http://apimimin.dimanamacet.com'
     /*ajax: function (url, method, hash) {
