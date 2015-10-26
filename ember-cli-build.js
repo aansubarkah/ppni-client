@@ -30,25 +30,16 @@ module.exports = function(defaults) {
     // please specify an object with the list of modules as keys
     // along with the exports of each module as its value.
 
+    // Font-Awesome
+    app.import('bower_components/font-awesome/css/font-awesome.min.css');
+
     // Bootstrap
-    //    app.import('bower_components/AdminLTE/bootstrap/css/bootstrap.min.css');
-    //    app.import('bower_components/AdminLTE/bootstrap/css/bootstrap.min.css');
-    //
-    //    app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
-    //    app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
-    //
-    //    // AdminLTE
-    //    app.import('bower_components/admin-lte/dist/css/AdminLTE.min.css');
-    //    app.import('bower_components/admin-lte/dist/css/skins/_all-skins.min.css');
-    //    app.import('bower_components/admin-lte/dist/js/app.min.js');
-    //
-    //    // AdminLTE plugins
-    //    app.import('bower_components/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js');
-    //
-    // AdminLTE
     app.import('bower_components/AdminLTE/bootstrap/css/bootstrap.min.css');
     app.import('bower_components/AdminLTE/bootstrap/js/bootstrap.min.js');
+
+    // AdminLTE
     app.import('bower_components/AdminLTE/dist/css/AdminLTE.min.css');
+    app.import('bower_components/AdminLTE/dist/css/skins/_all-skins.min.css');
     app.import('bower_components/AdminLTE/dist/js/app.min.js');
     app.import('bower_components/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js');
 
