@@ -39,7 +39,8 @@
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.4",
     "ember-resolver": "^2.0.2",
-    "ember-ufo-loading": "0.0.4"
+    "ember-ufo-loading": "0.0.4",
+    "pagination-pager": "1.2.5"
   },
   "dependencies": {}
 }

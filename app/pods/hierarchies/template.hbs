@@ -17,7 +17,7 @@
 				<tbody>
 					{{#each model as | datum index |}}
 					<tr>
-						<td>{{index}}</td>
+						<td>{{basic-math index "+" firstRowNumber}}</td>
 						<td>{{datum.name}}</td>
 					</tr>
 					{{else}}
@@ -28,6 +28,12 @@
 					{{/each}}
 				</tbody>
 			</table>
+		</div>
+		<div class="box-footer clearfix">
+			<p class="pull-left">Displaying row {{firstRowNumber}} to {{lastRowNumber}} from {{total}} rows</p>
+			<div class="box-tools pull-right">
+				{{pagination-pager count=totalPages current=page}}
+			</div>
 		</div>
 	</div>
 </section>

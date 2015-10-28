@@ -11,10 +11,11 @@ export default Ember.Controller.extend({
 	],
 	queryParams: ['page', 'limit', 'query'],
 	page: 1,
-	limit: 10,
+	limit: 5,
 	query: '',
 	total: null,
 	totalPages: function () {
+        //console.log(Math.ceil(this.get('total')/this.limit));
 		return Math.ceil(this.get('total') / this.limit);
 	}.property('total'),
 	firstRowNumber: function () {
