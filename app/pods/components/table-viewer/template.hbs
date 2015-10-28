@@ -10,10 +10,12 @@
         </tr>
     </thead>
     <tbody>
-        {{#each data as | datum index |}}
+        {{#each data}}
         <tr>
-            <td>{{index}}</td>
-            <td>{{datum.name}}</td>
+            <td>{{@key}}</td>
+            {{#each name}}
+            <td>{{this}}</td>
+            {{/each}}
         </tr>
         {{else}}
         <tr>

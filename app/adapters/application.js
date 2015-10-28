@@ -1,5 +1,6 @@
 //import Ember from 'ember';
 import DS from 'ember-data';
+import config from '../config/environment';
 //import DataAdapterMixin from 'ember-simple-auth/mixins/data-adapter-mixin';
 
 //export default DS.RESTAdapter.extend(DataAdapterMixin, {
@@ -16,10 +17,9 @@ export default DS.RESTAdapter.extend({
     // shouldBackgroundReloadRecord: function () {
     //     return false;
     // },
-    host: 'http://localhost:9876',
-    namespace: 'api'
+    host: config.APP.host,
+    namespace: config.APP.namespace
     //host: 'http://localhost:8765',// @todo change this on production server
-    //host: 'http://apimimin.dimanamacet.com'
     /*ajax: function (url, method, hash) {
       hash = hash || {};
       hash.crossDomain = true;

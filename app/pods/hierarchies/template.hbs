@@ -1,8 +1,33 @@
 {{content-header title=title}}
 <section class="content">
 	<div class="box">
+		{{search-form query=query searchPlaceholder=searchPlaceholder}}
 		<div class="box-body">
-			{{table-viewer data=model columnsName=columnsName}}
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>#</th>
+						{{#each columnsName as | column |}}
+						<th>
+							{{column.title}}
+						</th>
+						{{/each}}
+					</tr>
+				</thead>
+				<tbody>
+					{{#each model as | datum index |}}
+					<tr>
+						<td>{{index}}</td>
+						<td>{{datum.name}}</td>
+					</tr>
+					{{else}}
+					<tr>
+						<td>0</td>
+						<td>Tidak Terdapat Data</td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table>
 		</div>
 	</div>
 </section>
