@@ -1,7 +1,4 @@
-/**
- * Created by aan on 14/08/15.
- */
-import Ember from 'ember';
+//import Ember from 'ember';
 import DS from 'ember-data';
 //import DataAdapterMixin from 'ember-simple-auth/mixins/data-adapter-mixin';
 

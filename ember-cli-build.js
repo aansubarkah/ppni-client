@@ -42,6 +42,7 @@ module.exports = function(defaults) {
     app.import('bower_components/AdminLTE/dist/css/skins/_all-skins.min.css');
     app.import('bower_components/AdminLTE/dist/js/app.min.js');
     app.import('bower_components/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js');
+    app.import('bower_components/AdminLTE/plugins/datatables/jquery.dataTables.min.js');
 
     // Moment.js
     app.import('bower_components/moment/min/moment-with-locales.min.js');

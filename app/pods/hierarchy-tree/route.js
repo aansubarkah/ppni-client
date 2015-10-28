@@ -1,9 +1,9 @@
 import Ember from 'ember';
-import appConfig from '../../config/environment';
+import config from '../../config/environment';
 
 export default Ember.Route.extend({
     model: function(){
-        var url= appConfig.APP.host + appConfig.APP.namespace + '/hierarchies/tree';
+        var url = config.APP.host + config.APP.namespace + '/hierarchies/tree';
         return Ember.$.getJSON(url).then(
             function(data){
                 var entry = data.hierarchies;

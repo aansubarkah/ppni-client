@@ -1,0 +1,26 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            {{#each columnsName as | column |}}
+            <th>
+                {{column.title}}
+            </th>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data as | datum index |}}
+        <tr>
+            <td>{{index}}</td>
+            <td>{{datum.name}}</td>
+        </tr>
+        {{else}}
+        <tr>
+            <td>0</td>
+            <td>Tidak Terdapat Data</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<!-- refactor this file, use header, footer, and xx-table-item instead -->

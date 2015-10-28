@@ -1,13 +1,8 @@
-{{#content-header title=title}}{{/content-header}}
+{{content-header title=title}}
 <section class="content">
-	<ul>
-		{{#each model as | hierarcy|}}
-		<li>
-			{{hierarcy.name}}
-		</li>
-		{{/each}}
-	</ul>
-	{{ember-jstree
-	data=model
-	}}
+	<div class="box">
+		<div class="box-body">
+			{{table-viewer data=model columnsName=columnsName}}
+		</div>
+	</div>
 </section>
